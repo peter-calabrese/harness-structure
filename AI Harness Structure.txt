@@ -1,0 +1,191 @@
+
+engineering-ai-platform/
+│
+├── README.md
+├── CHANGELOG.md
+├── VERSION
+├── package.json
+│
+├── standards/                       # GLOBAL RULES
+│   ├── engineering.md
+│   ├── architecture.md
+│   ├── security.md
+│   ├── accessibility.md
+│   ├── testing.md
+│   ├── dependencies.md
+│   ├── observability.md
+│   │
+│   ├── frontend/
+│   │   ├── react.md
+│   │   ├── typescript.md
+│   │   ├── styling.md
+│   │   └── design-system.md
+│   │
+│   ├── backend/
+│   │   ├── api-design.md
+│   │   ├── authentication.md
+│   │   ├── error-handling.md
+│   │   └── logging.md
+│   │
+│   ├── devops/
+│   │   ├── ci-cd.md
+│   │   ├── terraform.md
+│   │   ├── kubernetes.md
+│   │   └── deployments.md
+│   │
+│   └── data/
+│       ├── database-design.md
+│       ├── sql.md
+│       ├── migrations.md
+│       └── data-governance.md
+│
+├── agents/                          # AGENT DEFINITIONS
+│   ├── orchestrator.md
+│   ├── ui.md
+│   ├── backend.md
+│   ├── devops.md
+│   ├── data.md
+│   ├── code-reviewer.md
+│   └── security-reviewer.md
+│
+├── skills/                          # CANONICAL SKILLS
+│   │
+│   ├── shared/
+│   │   ├── code-review/
+│   │   │   └── SKILL.md
+│   │   ├── write-tests/
+│   │   │   └── SKILL.md
+│   │   ├── debug-issue/
+│   │   │   └── SKILL.md
+│   │   └── architecture-review/
+│   │       └── SKILL.md
+│   │
+│   ├── frontend/
+│   │   ├── react-component/
+│   │   │   ├── SKILL.md
+│   │   │   ├── references/
+│   │   │   │   └── component-patterns.md
+│   │   │   ├── scripts/
+│   │   │   │   └── validate-component.sh
+│   │   │   └── assets/
+│   │   │       └── component-template.tsx
+│   │   │
+│   │   ├── accessibility-audit/
+│   │   │   └── SKILL.md
+│   │   ├── frontend-testing/
+│   │   │   └── SKILL.md
+│   │   └── state-management/
+│   │       └── SKILL.md
+│   │
+│   ├── backend/
+│   │   ├── create-api/
+│   │   │   ├── SKILL.md
+│   │   │   ├── references/
+│   │   │   │   └── api-conventions.md
+│   │   │   └── scripts/
+│   │   │       └── validate-api.sh
+│   │   ├── authentication/
+│   │   │   └── SKILL.md
+│   │   ├── service-layer/
+│   │   │   └── SKILL.md
+│   │   └── backend-testing/
+│   │       └── SKILL.md
+│   │
+│   ├── devops/
+│   │   ├── terraform-module/
+│   │   │   └── SKILL.md
+│   │   ├── github-actions/
+│   │   │   └── SKILL.md
+│   │   ├── dockerfile/
+│   │   │   └── SKILL.md
+│   │   └── deployment-review/
+│   │       └── SKILL.md
+│   │
+│   └── data/
+│       ├── schema-design/
+│       │   └── SKILL.md
+│       ├── sql-optimization/
+│       │   └── SKILL.md
+│       ├── database-migration/
+│       │   └── SKILL.md
+│       └── data-validation/
+│           └── SKILL.md
+│
+├── harnesses/                       # PROVIDER ADAPTERS
+│   ├── copilot/
+│   │   ├── copilot-instructions.md
+│   │   ├── agents/
+│   │   │   ├── ui.agent.md
+│   │   │   ├── backend.agent.md
+│   │   │   ├── devops.agent.md
+│   │   │   └── data.agent.md
+│   │   └── instructions/
+│   │       ├── frontend.instructions.md
+│   │       └── backend.instructions.md
+│   │
+│   ├── codex/
+│   │   ├── AGENTS.md
+│   │   ├── config.toml
+│   │   └── agents/
+│   │       ├── ui.toml
+│   │       ├── backend.toml
+│   │       ├── devops.toml
+│   │       └── data.toml
+│   │
+│   └── claude/
+│       ├── CLAUDE.md
+│       ├── settings.json
+│       └── agents/
+│           ├── ui.md
+│           ├── backend.md
+│           ├── devops.md
+│           └── data.md
+│
+├── policies/                        # ENFORCEMENT
+│   ├── agent-permissions.yaml
+│   ├── path-ownership.yaml
+│   ├── approved-mcp-servers.yaml
+│   ├── dependency-policy.yaml
+│   ├── required-checks.yaml
+│   └── exceptions/
+│       └── README.md
+│
+├── tooling/
+│   ├── policy-engine/
+│   │   ├── src/
+│   │   └── tests/
+│   ├── validators/
+│   │   ├── validate-skills.ts
+│   │   ├── validate-agents.ts
+│   │   └── validate-standards.ts
+│   └── hooks/
+│       ├── pre-tool-use.ts
+│       └── post-tool-use.ts
+│
+├── distribution/                    # INSTALLATION
+│   ├── manifest.yaml
+│   ├── generate.ts
+│   ├── sync.ts
+│   ├── check-drift.ts
+│   └── templates/
+│
+├── tests/                           # HARNESS TESTS
+│   ├── skill-discovery/
+│   ├── agent-routing/
+│   ├── policy-enforcement/
+│   ├── prompt-injection/
+│   └── fixtures/
+│
+├── docs/
+│   ├── architecture.md
+│   ├── agent-development.md
+│   ├── skill-development.md
+│   ├── onboarding.md
+│   └── rollout.md
+│
+└── .github/
+    ├── workflows/
+    │   ├── validate-platform.yml
+    │   ├── publish-release.yml
+    │   └── sync-repositories.yml
+    └── CODEOWNERS
