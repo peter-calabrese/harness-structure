@@ -1,4 +1,0 @@
-name = "devops"
-description = "Manages CI/CD pipelines, Terraform modules, containers, and Kubernetes deployments."
-canonical_agent = "agents/devops.md"
-skills = ["terraform-module", "github-actions", "dockerfile", "deployment-review"]

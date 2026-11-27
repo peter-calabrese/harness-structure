@@ -1,6 +1,0 @@
-[
-  { "prompt": "Build accessible React button", "expectedAgent": "ui" },
-  { "prompt": "Add POST /api/v1/orders endpoint", "expectedAgent": "backend" },
-  { "prompt": "Update Kubernetes probes", "expectedAgent": "devops" },
-  { "prompt": "Write zero-downtime column migration", "expectedAgent": "data" }
-]

@@ -1,4 +1,0 @@
-name = "data"
-description = "Designs relational schemas, optimizes SQL, authors safe migrations, and enforces data governance."
-canonical_agent = "agents/data.md"
-skills = ["schema-design", "sql-optimization", "database-migration", "data-validation"]

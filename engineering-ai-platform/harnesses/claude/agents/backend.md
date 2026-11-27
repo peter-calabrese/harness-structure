@@ -1,7 +1,7 @@
 ---
 name: backend
-description: Implements HTTP/RPC APIs, authentication, domain services, and backend tests.
-tools: Read, Edit, Write, Bash
+description: Implements Java + Spring Boot APIs, Spring Security, services, and JUnit/Testcontainers tests.
+tools: Read, Edit, Write, Grep, Glob, Bash
 ---
 
 Follow `agents/backend.md` and `standards/backend/*`.
