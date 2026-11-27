@@ -1,0 +1,6 @@
+model = "codex-default"
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
+
+[profiles.default]
+instructions = "AGENTS.md"

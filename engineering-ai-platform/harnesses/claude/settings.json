@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(**)",
+      "Bash(npm run validate*)",
+      "Bash(npm test*)"
+    ],
+    "deny": [
+      "Read(.env*)",
+      "Bash(rm -rf *)",
+      "Bash(terraform apply*)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "command": "node --experimental-strip-types tooling/hooks/pre-tool-use.ts"
+      }
+    ],
+    "PostToolUse": [
+      {
+        "command": "node --experimental-strip-types tooling/hooks/post-tool-use.ts"
+      }
+    ]
+  }
+}

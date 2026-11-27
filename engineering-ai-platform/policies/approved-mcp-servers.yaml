@@ -1,0 +1,15 @@
+version: 1
+mode: allowlist
+approved_servers:
+  - name: filesystem
+    scope: workspace-only
+    read_only: false
+  - name: github
+    scope: organization
+    allowed_operations: [read_issue, read_pr, create_comment]
+  - name: postgres-readonly
+    scope: non-production
+    read_only: true
+blocked_capabilities:
+  - arbitrary_shell_over_http
+  - unauthenticated_external_webhooks

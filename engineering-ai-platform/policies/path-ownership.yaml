@@ -1,0 +1,21 @@
+version: 1
+ownership:
+  - path: "standards/**"
+    owners: ["@platform-architecture"]
+    require_review: true
+  - path: "agents/**"
+    owners: ["@platform-ai"]
+    require_review: true
+  - path: "skills/**"
+    owners: ["@platform-ai"]
+    require_review: true
+  - path: "policies/**"
+    owners: ["@platform-security", "@platform-ai"]
+    require_review: true
+  - path: "harnesses/**"
+    owners: ["@platform-ai"]
+    generated_from: ["standards/", "agents/", "skills/"]
+  - path: "tooling/**"
+    owners: ["@platform-tooling"]
+  - path: "distribution/**"
+    owners: ["@platform-tooling"]

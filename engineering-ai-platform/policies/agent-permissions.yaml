@@ -1,0 +1,23 @@
+version: 1
+default_mode: deny
+agents:
+  orchestrator:
+    allowed_tools: [read, search, delegate, plan]
+    denied_commands: ["rm -rf", "terraform apply", "git push --force"]
+  ui:
+    allowed_tools: [read, write, edit, search, bash]
+    allowed_paths: ["src/frontend/**", "tests/frontend/**"]
+  backend:
+    allowed_tools: [read, write, edit, search, bash]
+    allowed_paths: ["src/backend/**", "tests/backend/**"]
+  devops:
+    allowed_tools: [read, write, edit, search, bash]
+    allowed_paths: [".github/**", "infra/**", "deploy/**", "Dockerfile*"]
+    require_approval_for: ["terraform apply", "kubectl apply", "helm upgrade"]
+  data:
+    allowed_tools: [read, write, edit, search, bash]
+    allowed_paths: ["db/**", "migrations/**", "sql/**"]
+  code-reviewer:
+    allowed_tools: [read, search]
+  security-reviewer:
+    allowed_tools: [read, search]

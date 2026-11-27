@@ -1,0 +1,4 @@
+name = "backend"
+description = "Implements HTTP/RPC APIs, authentication, domain services, and backend tests."
+canonical_agent = "agents/backend.md"
+skills = ["create-api", "authentication", "service-layer", "backend-testing"]

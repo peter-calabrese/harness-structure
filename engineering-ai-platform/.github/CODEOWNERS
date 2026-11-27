@@ -1,0 +1,8 @@
+# Default owners
+* @platform-ai
+
+/standards/ @platform-architecture
+/policies/ @platform-security @platform-ai
+/tooling/ @platform-tooling
+/distribution/ @platform-tooling
+/.github/ @platform-devops

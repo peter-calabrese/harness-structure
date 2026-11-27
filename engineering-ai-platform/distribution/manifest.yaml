@@ -1,0 +1,13 @@
+version: 1
+platform_version: 0.1.0
+providers:
+  - copilot
+  - codex
+  - claude
+targets:
+  - name: example-web-app
+    repo: org/example-web-app
+    providers: [copilot, claude]
+  - name: example-api-service
+    repo: org/example-api-service
+    providers: [copilot, codex, claude]

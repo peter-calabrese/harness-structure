@@ -1,0 +1,4 @@
+name = "ui"
+description = "Builds accessible, typed React interfaces and design-system components."
+canonical_agent = "agents/ui.md"
+skills = ["react-component", "accessibility-audit", "frontend-testing", "state-management"]
