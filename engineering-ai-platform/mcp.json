@@ -1,0 +1,12 @@
+{
+  "servers": {
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/"
+    },
+    "claude-code": {
+      "command": "claude",
+      "args": ["mcp", "serve"]
+    }
+  }
+}
